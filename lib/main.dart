@@ -5,22 +5,24 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.white,
           body: SafeArea(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('images/ly.jpg'),
+                backgroundImage: AssetImage('images/image.png'),
               ),
-              Text(
-                "Le Thi Ngoc Ly",
+              const Text(
+                "Dao Trung Thanh",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 25,
@@ -30,27 +32,28 @@ class MyApp extends StatelessWidget {
                 'Flutter Developer',
                 style: TextStyle(color: Colors.grey.shade900, fontSize: 15),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 150,
-                height: 100,
-                child: Divider(color: Colors.white),
+                height: 1,
+                child: Divider(color: Colors.black),
               ),
-              Card(
+              SizedBox(height: 10,),
+              const Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(Icons.phone, color: Colors.black),
                   title: Text(
-                    '0123456789',
+                    '0946814775',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
               ),
-              Card(
+              const Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(Icons.mail, color: Colors.black),
                   title: Text(
-                    'ngocly27112003@gmail.com',
+                    'thanhdt.21it@vku.udn.vn',
                     style: TextStyle(fontSize: 18),
                   ),
                 ),
